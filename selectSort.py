@@ -4,18 +4,18 @@ import insertionSort
 import selectionSort
 import time
 
-yourList=input("type a list of numbers you want to sort separated by spaces:")
+yourList=input("Type a list of numbers you want to sort separated by spaces: ")
 inputList=list(map(int, yourList.split()))
-sort= input("wich sort algorithm you prefer? bubbleSort, quickSort, insertionSort, selectionSort?"  )
+sort= input("Which sort algorithm you prefer? 1. bubbleSort , 2. quickSort, 3. insertionSort , 4. selectionSort ? Choose a number: "  )
 
 start_time=time.time()
-if   sort=="bubbleSort":
+if   sort=="1":
      print (bubbleSort.bubble(inputList))
-elif sort=="quickSort":    
+elif sort=="2":    
      print (quickSort.quick_sort(inputList))
-elif sort=="insertionSort":
+elif sort=="3":
      print (insertionSort.insertion_sort(inputList))
-elif sort=="selectionSort":     
+elif sort=="4":     
      print (selectionSort.selection_sort(inputList))
 else:
     print("Not such a sorting algorithm available")     
